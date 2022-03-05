@@ -1,0 +1,39 @@
+@mixin absCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// MEDIA QUERY MANAGER
+/*
+0 - 320px:      sm
+320 - 768px:    md
+768 - 1024px:   bg
+1024 - 1440px:  xl
+1440px+:        xxl
+
+1em = 16px
+*/
+@mixin respond($breakpoint) {
+  @if $breakpoint == sm {
+    @media only screen and (max-width: 20em) {
+      @content;
+    } //320px
+  }
+  @if $breakpoint == md {
+    @media only screen and (max-width: 48em) {
+      @content;
+    } //768px
+  }
+  @if $breakpoint == bg {
+    @media only screen and (max-width: 64em) {
+      @content;
+    } //1024px
+  }
+  @if $breakpoint == xl {
+    @media only screen and (min-width: 90em) {
+      @content;
+    } //1440px
+  }
+}

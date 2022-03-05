@@ -1,0 +1,42 @@
+.slider {
+  min-height: 40px;
+  background-color: $color-violet;
+  border-radius: $br-sm;
+  color: $color-white;
+  font-weight: $weight-sm;
+  text-align: center;
+  font-size: 1.6rem;
+  margin: 8px 8px 0px 8px;
+  position: relative;
+
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+
+  .slick-track {
+    display: flex;
+  }
+  .slick-disabled {
+    opacity: 0.5;
+  }
+  .slick-list {
+    overflow: hidden;
+  }
+  .slick-arrow {
+    position: absolute;
+    top: 35%;
+    z-index: 10;
+    font-size: 0;
+    width: 10px;
+    height: 20px;
+    border: none;
+  }
+  .slick-prev {
+    left: 30px;
+    background: url("../img/carousel_left.svg") 0 0 no-repeat;
+  }
+  .slick-next {
+    right: 30px;
+    background: url("../img/carousel_right.svg") 0 0 no-repeat;
+  }
+}

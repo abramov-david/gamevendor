@@ -1,0 +1,17 @@
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 13.6px;
+  padding-top: 4rem;
+  padding-bottom: 3.2rem;
+
+  &__link {
+    text-decoration: none;
+    font-size: $font-reg;
+    color: $color-grey;
+
+    &--active {
+      opacity: 0.5 !important;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.header {
+  &__main {
+    border-bottom: 1px solid $color-grey--light-2;
+    &--wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 115px;
+      min-height: 7.2rem;
+    }
+  }
+  &__location {
+    display: flex;
+    align-items: center;
+    gap: 1.15rem;
+    font-size: $font-reg;
+  }
+  &__btns {
+    display: flex;
+    align-items: center;
+    gap: 4.5rem;
+    cursor: pointer;
+  }
+  &__links {
+    min-height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 112px;
+  }
+  &__link {
+    text-decoration: none;
+    color: $color-black;
+    font-weight: $weight-md;
+    font-size: $font-md;
+    transition: all 0.2s;
+    &:hover {
+      color: $color-grey;
+    }
+  }
+}

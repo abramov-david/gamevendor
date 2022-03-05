@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html',{ 'title':'Главная' })
+  <body>
+    @@include('html/header.html',{})
+
+    <main class="main">
+      <div class="main__content">
+        <section class="breadcrumbs">
+          <a href="#" class="breadcrumbs__link">Home</a>
+          <svg
+            width="5"
+            height="8"
+            viewBox="0 0 5 8"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4.39995 3.9998L4.82421 4.42407C5.05853 4.18975 5.05853 3.80986 4.82422 3.57554L4.39995 3.9998ZM1.62422 0.375541C1.3899 0.141226 1.01 0.141226 0.775688 0.375541C0.541373 0.609855 0.541373 0.989754 0.775688 1.22407L1.62422 0.375541ZM0.775687 6.77554C0.541373 7.00985 0.541372 7.38975 0.775687 7.62407C1.01 7.85838 1.3899 7.85838 1.62422 7.62407L0.775687 6.77554ZM0.775688 1.22407L3.97569 4.42407L4.82422 3.57554L1.62422 0.375541L0.775688 1.22407ZM3.97569 3.57554L0.775687 6.77554L1.62422 7.62407L4.82421 4.42407L3.97569 3.57554Z"
+              fill="#D0D5DD"
+            />
+          </svg>
+          <a href="#" class="breadcrumbs__link">Discover</a>
+          <svg
+            width="5"
+            height="8"
+            viewBox="0 0 5 8"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4.39995 3.9998L4.82421 4.42407C5.05853 4.18975 5.05853 3.80986 4.82422 3.57554L4.39995 3.9998ZM1.62422 0.375541C1.3899 0.141226 1.01 0.141226 0.775688 0.375541C0.541373 0.609855 0.541373 0.989754 0.775688 1.22407L1.62422 0.375541ZM0.775687 6.77554C0.541373 7.00985 0.541372 7.38975 0.775687 7.62407C1.01 7.85838 1.3899 7.85838 1.62422 7.62407L0.775687 6.77554ZM0.775688 1.22407L3.97569 4.42407L4.82422 3.57554L1.62422 0.375541L0.775688 1.22407ZM3.97569 3.57554L0.775687 6.77554L1.62422 7.62407L4.82421 4.42407L3.97569 3.57554Z"
+              fill="#D0D5DD"
+            />
+          </svg>
+          <a href="#" class="breadcrumbs__link breadcrumbs__link--active"
+            >Games</a
+          >
+        </section>
+        <h1 class="main__title">Games</h1>
+        <section class="main__banner">
+          <h2 class="main__banner-title">Refer a friends and get $10 off!</h2>
+          <p class="main__banner-text">
+            Connect with friends. Refer a friend and unlock your $10 coupon!
+            Offer ends February 27.
+          </p>
+          <button class="main__banner-btn">Invite a friend</button>
+          <div class="main__banner-img">
+            <img src="img/main_banner_png.png" alt="" />
+          </div>
+        </section>
+      </div>
+    </main>
+
+    @@include('html/footer.html',{})
+
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.js"
+      integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="
+      crossorigin="anonymous"
+    ></script>
+    <!-- SLICK SLIDER -->
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
