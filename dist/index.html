@@ -4,16 +4,16 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.min.css?_v=20220305022640" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20220311011424" />
   <link
     rel="stylesheet"
     type="text/css"
-    href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css?_v=20220305022640"
+    href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css?_v=20220311011424"
   />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap&_v=20220305022640"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap&_v=20220311011424"
     rel="stylesheet"
   />
   <title>Главная</title>
@@ -188,27 +188,3112 @@
           >
         </section>
         <h1 class="main__title">Games</h1>
+
         <section class="main__banner">
-          <h2 class="main__banner-title">Refer a friends and get $10 off!</h2>
-          <p class="main__banner-text">
-            Connect with friends. Refer a friend and unlock your $10 coupon!
-            Offer ends February 27.
-          </p>
-          <button class="main__banner-btn">Invite a friend</button>
-          <div class="main__banner-img">
-            <img src="img/main_banner_png.png" alt="" />
+          <!--    <img class="main__banner__main-img" src="img/Banner.png" alt="" /> -->
+          <div class="main__banner__info">
+            <h2 class="main__banner__title">
+              Refer a friends and get $10 off!
+            </h2>
+            <p class="main__banner__text">
+              Connect with friends. Refer a friend and unlock your $10 coupon!
+              Offer ends February 27.
+            </p>
+            <button class="main__banner__btn">Invite a friend</button>
+          </div>
+          <img class="main__banner__img" src="img/main_banner_png.png" alt="" />
+        </section>
+
+        <section class="main__searchSort">
+          <div class="main__searchSort__block main__searchSort__block--search">
+            <label for="search">Search for games</label>
+            <input
+              class="main__searchSort__block__input"
+              type="text"
+              id="search"
+              name="search"
+              placeholder="Search..."
+            />
+            <svg
+              class="main__searchSort__icon"
+              width="18"
+              height="18"
+              viewBox="0 0 18 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16.4343 17.5657C16.7467 17.8781 17.2533 17.8781 17.5657 17.5657C17.8781 17.2533 17.8781 16.7467 17.5657 16.4343L16.4343 17.5657ZM13.699 12.5676C13.3866 12.2552 12.8801 12.2552 12.5676 12.5676C12.2552 12.8801 12.2552 13.3866 12.5676 13.699L13.699 12.5676ZM14.4222 8.11111C14.4222 11.5966 11.5966 14.4222 8.11111 14.4222V16.0222C12.4803 16.0222 16.0222 12.4803 16.0222 8.11111H14.4222ZM8.11111 14.4222C4.62558 14.4222 1.8 11.5966 1.8 8.11111H0.2C0.2 12.4803 3.74192 16.0222 8.11111 16.0222V14.4222ZM1.8 8.11111C1.8 4.62558 4.62558 1.8 8.11111 1.8V0.2C3.74192 0.2 0.2 3.74192 0.2 8.11111H1.8ZM8.11111 1.8C11.5966 1.8 14.4222 4.62558 14.4222 8.11111H16.0222C16.0222 3.74192 12.4803 0.2 8.11111 0.2V1.8ZM17.5657 16.4343L13.699 12.5676L12.5676 13.699L16.4343 17.5657L17.5657 16.4343Z"
+                fill="#98A2B3"
+              />
+            </svg>
+          </div>
+          <div class="main__searchSort__block main__searchSort__block--select">
+            <label for="search">Category</label>
+            <div
+              class="main__searchSort__block__input main__searchSort__block__input--category"
+            >
+              <div class="user-category user-category--small">
+                <p>Strategy</p>
+                <svg
+                  width="5"
+                  height="5"
+                  viewBox="0 0 10 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.56569 1.56569C9.8781 1.25327 9.8781 0.746734 9.56569 0.434315C9.25327 0.121895 8.74673 0.121895 8.43431 0.434315L9.56569 1.56569ZM0.434315 8.43431C0.121895 8.74673 0.121895 9.25327 0.434315 9.56569C0.746734 9.8781 1.25327 9.8781 1.56569 9.56569L0.434315 8.43431ZM1.56569 0.434315C1.25327 0.121895 0.746734 0.121895 0.434315 0.434315C0.121895 0.746734 0.121895 1.25327 0.434315 1.56569L1.56569 0.434315ZM8.43431 9.56569C8.74673 9.8781 9.25327 9.8781 9.56569 9.56569C9.8781 9.25327 9.8781 8.74673 9.56569 8.43431L8.43431 9.56569ZM8.43431 0.434315L0.434315 8.43431L1.56569 9.56569L9.56569 1.56569L8.43431 0.434315ZM0.434315 1.56569L8.43431 9.56569L9.56569 8.43431L1.56569 0.434315L0.434315 1.56569Z"
+                    fill="#7F56D9"
+                  />
+                </svg>
+              </div>
+              <div class="user-category user-category--small">
+                <p>RPG</p>
+                <svg
+                  width="5"
+                  height="5"
+                  viewBox="0 0 10 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.56569 1.56569C9.8781 1.25327 9.8781 0.746734 9.56569 0.434315C9.25327 0.121895 8.74673 0.121895 8.43431 0.434315L9.56569 1.56569ZM0.434315 8.43431C0.121895 8.74673 0.121895 9.25327 0.434315 9.56569C0.746734 9.8781 1.25327 9.8781 1.56569 9.56569L0.434315 8.43431ZM1.56569 0.434315C1.25327 0.121895 0.746734 0.121895 0.434315 0.434315C0.121895 0.746734 0.121895 1.25327 0.434315 1.56569L1.56569 0.434315ZM8.43431 9.56569C8.74673 9.8781 9.25327 9.8781 9.56569 9.56569C9.8781 9.25327 9.8781 8.74673 9.56569 8.43431L8.43431 9.56569ZM8.43431 0.434315L0.434315 8.43431L1.56569 9.56569L9.56569 1.56569L8.43431 0.434315ZM0.434315 1.56569L8.43431 9.56569L9.56569 8.43431L1.56569 0.434315L0.434315 1.56569Z"
+                    fill="#7F56D9"
+                  />
+                </svg>
+              </div>
+              <div class="user-category user-category--small">
+                <p>+3</p>
+                <svg
+                  width="5"
+                  height="5"
+                  viewBox="0 0 10 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.56569 1.56569C9.8781 1.25327 9.8781 0.746734 9.56569 0.434315C9.25327 0.121895 8.74673 0.121895 8.43431 0.434315L9.56569 1.56569ZM0.434315 8.43431C0.121895 8.74673 0.121895 9.25327 0.434315 9.56569C0.746734 9.8781 1.25327 9.8781 1.56569 9.56569L0.434315 8.43431ZM1.56569 0.434315C1.25327 0.121895 0.746734 0.121895 0.434315 0.434315C0.121895 0.746734 0.121895 1.25327 0.434315 1.56569L1.56569 0.434315ZM8.43431 9.56569C8.74673 9.8781 9.25327 9.8781 9.56569 9.56569C9.8781 9.25327 9.8781 8.74673 9.56569 8.43431L8.43431 9.56569ZM8.43431 0.434315L0.434315 8.43431L1.56569 9.56569L9.56569 1.56569L8.43431 0.434315ZM0.434315 1.56569L8.43431 9.56569L9.56569 8.43431L1.56569 0.434315L0.434315 1.56569Z"
+                    fill="#7F56D9"
+                  />
+                </svg>
+              </div>
+              <svg
+                class="user-category__icon"
+                width="10"
+                height="6"
+                viewBox="0 0 10 6"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5 5L4.43431 5.56569C4.74673 5.8781 5.25327 5.8781 5.56569 5.56569L5 5ZM9.56569 1.56569C9.8781 1.25327 9.8781 0.746734 9.56569 0.434314C9.25327 0.121895 8.74673 0.121895 8.43431 0.434314L9.56569 1.56569ZM1.56569 0.434315C1.25327 0.121895 0.746734 0.121895 0.434314 0.434315C0.121895 0.746734 0.121895 1.25327 0.434314 1.56569L1.56569 0.434315ZM8.43431 0.434314L4.43431 4.43431L5.56569 5.56569L9.56569 1.56569L8.43431 0.434314ZM5.56569 4.43431L1.56569 0.434315L0.434314 1.56569L4.43431 5.56569L5.56569 4.43431Z"
+                  fill="#101828"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="main__searchSort__block main__searchSort__block--select">
+            <label for="search">Sort by</label>
+            <div
+              class="main__searchSort__block__input main__searchSort__block__input--category"
+            >
+              <p>Popular</p>
+              <svg
+                class="user-category__icon"
+                width="10"
+                height="6"
+                viewBox="0 0 10 6"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5 5L4.43431 5.56569C4.74673 5.8781 5.25327 5.8781 5.56569 5.56569L5 5ZM9.56569 1.56569C9.8781 1.25327 9.8781 0.746734 9.56569 0.434314C9.25327 0.121895 8.74673 0.121895 8.43431 0.434314L9.56569 1.56569ZM1.56569 0.434315C1.25327 0.121895 0.746734 0.121895 0.434314 0.434315C0.121895 0.746734 0.121895 1.25327 0.434314 1.56569L1.56569 0.434315ZM8.43431 0.434314L4.43431 4.43431L5.56569 5.56569L9.56569 1.56569L8.43431 0.434314ZM5.56569 4.43431L1.56569 0.434315L0.434314 1.56569L4.43431 5.56569L5.56569 4.43431Z"
+                  fill="#101828"
+                />
+              </svg>
+            </div>
+          </div>
+        </section>
+
+        <section class="main__filters">
+          <div class="user-category user-category--big">
+            <p>Strategy</p>
+            <svg
+              width="10"
+              height="10"
+              viewBox="0 0 10 10"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9.56569 1.56569C9.8781 1.25327 9.8781 0.746734 9.56569 0.434315C9.25327 0.121895 8.74673 0.121895 8.43431 0.434315L9.56569 1.56569ZM0.434315 8.43431C0.121895 8.74673 0.121895 9.25327 0.434315 9.56569C0.746734 9.8781 1.25327 9.8781 1.56569 9.56569L0.434315 8.43431ZM1.56569 0.434315C1.25327 0.121895 0.746734 0.121895 0.434315 0.434315C0.121895 0.746734 0.121895 1.25327 0.434315 1.56569L1.56569 0.434315ZM8.43431 9.56569C8.74673 9.8781 9.25327 9.8781 9.56569 9.56569C9.8781 9.25327 9.8781 8.74673 9.56569 8.43431L8.43431 9.56569ZM8.43431 0.434315L0.434315 8.43431L1.56569 9.56569L9.56569 1.56569L8.43431 0.434315ZM0.434315 1.56569L8.43431 9.56569L9.56569 8.43431L1.56569 0.434315L0.434315 1.56569Z"
+                fill="#7F56D9"
+              />
+            </svg>
+          </div>
+          <div class="user-category user-category--big">
+            <p>RPG</p>
+            <svg
+              width="10"
+              height="10"
+              viewBox="0 0 10 10"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9.56569 1.56569C9.8781 1.25327 9.8781 0.746734 9.56569 0.434315C9.25327 0.121895 8.74673 0.121895 8.43431 0.434315L9.56569 1.56569ZM0.434315 8.43431C0.121895 8.74673 0.121895 9.25327 0.434315 9.56569C0.746734 9.8781 1.25327 9.8781 1.56569 9.56569L0.434315 8.43431ZM1.56569 0.434315C1.25327 0.121895 0.746734 0.121895 0.434315 0.434315C0.121895 0.746734 0.121895 1.25327 0.434315 1.56569L1.56569 0.434315ZM8.43431 9.56569C8.74673 9.8781 9.25327 9.8781 9.56569 9.56569C9.8781 9.25327 9.8781 8.74673 9.56569 8.43431L8.43431 9.56569ZM8.43431 0.434315L0.434315 8.43431L1.56569 9.56569L9.56569 1.56569L8.43431 0.434315ZM0.434315 1.56569L8.43431 9.56569L9.56569 8.43431L1.56569 0.434315L0.434315 1.56569Z"
+                fill="#7F56D9"
+              />
+            </svg>
+          </div>
+          <div class="user-category user-category--big">
+            <p>Action</p>
+            <svg
+              width="10"
+              height="10"
+              viewBox="0 0 10 10"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9.56569 1.56569C9.8781 1.25327 9.8781 0.746734 9.56569 0.434315C9.25327 0.121895 8.74673 0.121895 8.43431 0.434315L9.56569 1.56569ZM0.434315 8.43431C0.121895 8.74673 0.121895 9.25327 0.434315 9.56569C0.746734 9.8781 1.25327 9.8781 1.56569 9.56569L0.434315 8.43431ZM1.56569 0.434315C1.25327 0.121895 0.746734 0.121895 0.434315 0.434315C0.121895 0.746734 0.121895 1.25327 0.434315 1.56569L1.56569 0.434315ZM8.43431 9.56569C8.74673 9.8781 9.25327 9.8781 9.56569 9.56569C9.8781 9.25327 9.8781 8.74673 9.56569 8.43431L8.43431 9.56569ZM8.43431 0.434315L0.434315 8.43431L1.56569 9.56569L9.56569 1.56569L8.43431 0.434315ZM0.434315 1.56569L8.43431 9.56569L9.56569 8.43431L1.56569 0.434315L0.434315 1.56569Z"
+                fill="#7F56D9"
+              />
+            </svg>
+          </div>
+          <div class="user-category user-category--big">
+            <p>Shooter</p>
+            <svg
+              width="10"
+              height="10"
+              viewBox="0 0 10 10"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9.56569 1.56569C9.8781 1.25327 9.8781 0.746734 9.56569 0.434315C9.25327 0.121895 8.74673 0.121895 8.43431 0.434315L9.56569 1.56569ZM0.434315 8.43431C0.121895 8.74673 0.121895 9.25327 0.434315 9.56569C0.746734 9.8781 1.25327 9.8781 1.56569 9.56569L0.434315 8.43431ZM1.56569 0.434315C1.25327 0.121895 0.746734 0.121895 0.434315 0.434315C0.121895 0.746734 0.121895 1.25327 0.434315 1.56569L1.56569 0.434315ZM8.43431 9.56569C8.74673 9.8781 9.25327 9.8781 9.56569 9.56569C9.8781 9.25327 9.8781 8.74673 9.56569 8.43431L8.43431 9.56569ZM8.43431 0.434315L0.434315 8.43431L1.56569 9.56569L9.56569 1.56569L8.43431 0.434315ZM0.434315 1.56569L8.43431 9.56569L9.56569 8.43431L1.56569 0.434315L0.434315 1.56569Z"
+                fill="#7F56D9"
+              />
+            </svg>
+          </div>
+          <div class="user-category user-category--big">
+            <p>Clear all</p>
+            <svg
+              width="10"
+              height="10"
+              viewBox="0 0 10 10"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9.56569 1.56569C9.8781 1.25327 9.8781 0.746734 9.56569 0.434315C9.25327 0.121895 8.74673 0.121895 8.43431 0.434315L9.56569 1.56569ZM0.434315 8.43431C0.121895 8.74673 0.121895 9.25327 0.434315 9.56569C0.746734 9.8781 1.25327 9.8781 1.56569 9.56569L0.434315 8.43431ZM1.56569 0.434315C1.25327 0.121895 0.746734 0.121895 0.434315 0.434315C0.121895 0.746734 0.121895 1.25327 0.434315 1.56569L1.56569 0.434315ZM8.43431 9.56569C8.74673 9.8781 9.25327 9.8781 9.56569 9.56569C9.8781 9.25327 9.8781 8.74673 9.56569 8.43431L8.43431 9.56569ZM8.43431 0.434315L0.434315 8.43431L1.56569 9.56569L9.56569 1.56569L8.43431 0.434315ZM0.434315 1.56569L8.43431 9.56569L9.56569 8.43431L1.56569 0.434315L0.434315 1.56569Z"
+                fill="#7F56D9"
+              />
+            </svg>
+          </div>
+        </section>
+
+        <section class="main__cards">
+          <div class="card card--new">
+            <p class="card__text">
+              You can add a product card by clicking on the button
+            </p>
+            <button class="btn btn--big btn--violet">
+              <svg
+                width="18"
+                height="19"
+                viewBox="0 0 18 19"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.8 6.3C9.8 5.85817 9.44183 5.5 9 5.5C8.55817 5.5 8.2 5.85817 8.2 6.3H9.8ZM8.2 12.7C8.2 13.1418 8.55817 13.5 9 13.5C9.44183 13.5 9.8 13.1418 9.8 12.7H8.2ZM5.8 8.7C5.35817 8.7 5 9.05817 5 9.5C5 9.94183 5.35817 10.3 5.8 10.3V8.7ZM12.2 10.3C12.6418 10.3 13 9.94183 13 9.5C13 9.05817 12.6418 8.7 12.2 8.7V10.3ZM16.2 9.5C16.2 13.4765 12.9765 16.7 9 16.7V18.3C13.8601 18.3 17.8 14.3601 17.8 9.5H16.2ZM9 16.7C5.02355 16.7 1.8 13.4765 1.8 9.5H0.2C0.2 14.3601 4.13989 18.3 9 18.3V16.7ZM1.8 9.5C1.8 5.52355 5.02355 2.3 9 2.3V0.7C4.13989 0.7 0.2 4.63989 0.2 9.5H1.8ZM9 2.3C12.9765 2.3 16.2 5.52355 16.2 9.5H17.8C17.8 4.63989 13.8601 0.7 9 0.7V2.3ZM8.2 6.3V12.7H9.8V6.3H8.2ZM5.8 10.3H12.2V8.7H5.8V10.3Z"
+                  fill="white"
+                />
+              </svg>
+              <p>Add card</p>
+            </button>
+          </div>
+
+          <div class="card card--main">
+            <img class="card__img" src="img/game_1.jpg" alt="" />
+            <div class="card__content">
+              <div class="card__header">
+                <div class="card-category">
+                  <span class="card-category__blue">
+                    <svg
+                      width="6"
+                      height="6"
+                      viewBox="0 0 6 6"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="3" cy="3" r="3" fill="" />
+                    </svg>
+                    <p>Action RPG</p>
+                  </span>
+                </div>
+                <p class="card__title">Saints Row</p>
+                <div class="card__rating">
+                  <svg
+                    class="card__rating__star--disabled"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <svg
+                    class="card__rating__star--disabled"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <svg
+                    class="card__rating__star--disabled"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <svg
+                    class="card__rating__star--disabled"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <svg
+                    class="card__rating__star--disabled"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <p class="card__text">0</p>
+                </div>
+                <p class="card__text card__description">Platinum Edition</p>
+              </div>
+
+              <div class="card__footer">
+                <div class="card__footer__prices">
+                  <p class="card__price card__price--old">&#36;1,299</p>
+                  <p class="card__price">&#36;649</p>
+                </div>
+                <div class="card__action">-50&#37;</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card--main">
+            <img class="card__img" src="img/game_2.jpg" alt="" />
+            <div class="card__content">
+              <div class="card__header">
+                <div class="card-category">
+                  <span class="card-category__red">
+                    <svg
+                      width="6"
+                      height="6"
+                      viewBox="0 0 6 6"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="3" cy="3" r="3" fill="" />
+                    </svg>
+                    <p>Multiplayer RPG</p>
+                  </span>
+                </div>
+                <p class="card__title">Paladins</p>
+                <div class="card__rating">
+                  <svg
+                    class="card__rating__star--active"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <svg
+                    class="card__rating__star--active"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <svg
+                    class="card__rating__star--active"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <svg
+                    class="card__rating__star--active"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <svg
+                    class="card__rating__star--active"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <p class="card__text">1,820</p>
+                </div>
+                <p class="card__text card__description">
+                  Get the Captain Price Operator included with purchase
+                </p>
+              </div>
+              <div class="card__footer">
+                <div class="card__footer__prices">
+                  <p class="card__price">free</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card--main">
+            <img class="card__img" src="img/game_3.jpg" alt="" />
+            <div class="card__content">
+              <div class="card__header">
+                <div class="card-category">
+                  <span class="card-category__orange">
+                    <svg
+                      width="6"
+                      height="6"
+                      viewBox="0 0 6 6"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="3" cy="3" r="3" fill="" />
+                    </svg>
+                    <p>Action</p>
+                  </span>
+                </div>
+                <p class="card__title">Far Cry 6</p>
+                <div class="card__rating">
+                  <svg
+                    class="card__rating__star--active"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <svg
+                    class="card__rating__star--active"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <svg
+                    class="card__rating__star--active"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <svg
+                    class="card__rating__star--active"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <svg
+                    class="card__rating__star--disabled"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <p class="card__text">2,888</p>
+                </div>
+                <p class="card__text card__description">In-Game Content</p>
+              </div>
+              <div class="card__footer">
+                <div class="card__footer__prices">
+                  <p class="card__price card__price--old">&#36;1,299</p>
+                  <p class="card__price">&#36;649</p>
+                </div>
+                <div class="card__action">-50&#37;</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card--main">
+            <img class="card__img" src="img/game_4.jpg" alt="" />
+            <div class="card__content">
+              <div class="card__header">
+                <div class="card-category">
+                  <span class="card-category__violet">
+                    <svg
+                      width="6"
+                      height="6"
+                      viewBox="0 0 6 6"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="3" cy="3" r="3" fill="" />
+                    </svg>
+                    <p>Shooter</p>
+                  </span>
+                </div>
+                <p class="card__title">Call of Duty: Warzone</p>
+                <div class="card__rating">
+                  <svg
+                    class="card__rating__star--active"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <svg
+                    class="card__rating__star--active"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <svg
+                    class="card__rating__star--active"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <svg
+                    class="card__rating__star--disabled"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <svg
+                    class="card__rating__star--disabled"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <p class="card__text">18,982</p>
+                </div>
+                <p class="card__text card__description">
+                  Get the Captain Price Operator included with purchase
+                </p>
+              </div>
+              <div class="card__footer">
+                <div class="card__footer__prices">
+                  <p class="card__price card__price--old">&#36;1,299</p>
+                  <p class="card__price">&#36;649</p>
+                </div>
+                <div class="card__action">-50&#37;</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card--main">
+            <img class="card__img" src="img/game_5.jpg" alt="" />
+            <div class="card__content">
+              <div class="card__header">
+                <div class="card-category">
+                  <span class="card-category__orange">
+                    <svg
+                      width="6"
+                      height="6"
+                      viewBox="0 0 6 6"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="3" cy="3" r="3" fill="" />
+                    </svg>
+                    <p>Action</p>
+                  </span>
+                </div>
+                <p class="card__title">World of Warcraft: Shadowlands</p>
+                <div class="card__rating">
+                  <svg
+                    class="card__rating__star--active"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <svg
+                    class="card__rating__star--active"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <svg
+                    class="card__rating__star--active"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <svg
+                    class="card__rating__star--half"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <svg
+                    class="card__rating__star--disabled"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <p class="card__text">299</p>
+                </div>
+                <p class="card__text card__description">
+                  Includes access to World of Warcraft, Burning Crusade Classic,
+                  and WoW Classic!
+                </p>
+              </div>
+              <div class="card__footer">
+                <div class="card__footer__prices">
+                  <p class="card__price">free</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card--main">
+            <img class="card__img" src="img/game_6.jpg" alt="" />
+            <div class="card__content">
+              <div class="card__header">
+                <div class="card-category">
+                  <span class="card-category__violet">
+                    <svg
+                      width="6"
+                      height="6"
+                      viewBox="0 0 6 6"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="3" cy="3" r="3" fill="" />
+                    </svg>
+                    <p>Shooter</p>
+                  </span>
+                </div>
+                <p class="card__title">Fortnite</p>
+                <div class="card__rating">
+                  <svg
+                    class="card__rating__star--active"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <svg
+                    class="card__rating__star--active"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <svg
+                    class="card__rating__star--active"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <svg
+                    class="card__rating__star--active"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <svg
+                    class="card__rating__star--half"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <p class="card__text">9,199</p>
+                </div>
+                <p class="card__text card__description">
+                  Get the Captain Price Operator included with purchase
+                </p>
+              </div>
+              <div class="card__footer">
+                <div class="card__footer__prices">
+                  <p class="card__price card__price--old">&#36;1,299</p>
+                  <p class="card__price">&#36;649</p>
+                </div>
+                <div class="card__action">-50&#37;</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card--main">
+            <img class="card__img" src="img/game_7.jpg" alt="" />
+            <div class="card__content">
+              <div class="card__header">
+                <div class="card-category">
+                  <span class="card-category__blue">
+                    <svg
+                      width="6"
+                      height="6"
+                      viewBox="0 0 6 6"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="3" cy="3" r="3" fill="" />
+                    </svg>
+                    <p>Action RPG</p>
+                  </span>
+                </div>
+                <p class="card__title">Horizon: Forbidden West</p>
+                <div class="card__rating">
+                  <svg
+                    class="card__rating__star--active"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <svg
+                    class="card__rating__star--active"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <svg
+                    class="card__rating__star--active"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <svg
+                    class="card__rating__star--active"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <svg
+                    class="card__rating__star--half"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+
+                  <p class="card__text">9,199</p>
+                </div>
+                <p class="card__text card__description">
+                  Get the Captain Price Operator included with purchase
+                </p>
+              </div>
+              <div class="card__footer">
+                <div class="card__footer__prices">
+                  <p class="card__price card__price--old">&#36;1,299</p>
+                  <p class="card__price">&#36;649</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card--main">
+            <img class="card__img" src="img/game_8.jpg" alt="" />
+            <div class="card__content">
+              <div class="card__header">
+                <div class="card-category">
+                  <span class="card-category__orange">
+                    <svg
+                      width="6"
+                      height="6"
+                      viewBox="0 0 6 6"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="3" cy="3" r="3" fill="" />
+                    </svg>
+                    <p>Action</p>
+                  </span>
+                </div>
+                <p class="card__title">Need for Speed: Heat</p>
+                <div class="card__rating">
+                  <svg
+                    class="card__rating__star--active"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <svg
+                    class="card__rating__star--active"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <svg
+                    class="card__rating__star--active"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <svg
+                    class="card__rating__star--active"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <svg
+                    class="card__rating__star--half"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+
+                  <p class="card__text">2,911</p>
+                </div>
+                <p class="card__text card__description">
+                  Includes access to World of Warcraft, Burning Crusade Classic,
+                  and WoW Classic!
+                </p>
+              </div>
+              <div class="card__footer">
+                <div class="card__footer__prices">
+                  <p class="card__price">&#36;649</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card--main">
+            <img class="card__img" src="img/game_9.jpg" alt="" />
+            <div class="card__content">
+              <div class="card__header">
+                <div class="card-category">
+                  <span class="card-category__orange">
+                    <svg
+                      width="6"
+                      height="6"
+                      viewBox="0 0 6 6"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="3" cy="3" r="3" fill="" />
+                    </svg>
+                    <p>Action</p>
+                  </span>
+                </div>
+                <p class="card__title">Spider-Man: Miles Morales</p>
+                <div class="card__rating">
+                  <svg
+                    class="card__rating__star--active"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <svg
+                    class="card__rating__star--active"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <svg
+                    class="card__rating__star--active"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <svg
+                    class="card__rating__star--disabled"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <svg
+                    class="card__rating__star--disabled"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+
+                  <p class="card__text">920</p>
+                </div>
+                <p class="card__text card__description">
+                  Get the Captain Price Operator included with purchase
+                </p>
+              </div>
+              <div class="card__footer">
+                <div class="card__footer__prices">
+                  <p class="card__price card__price--old">&#36;1,299</p>
+                  <p class="card__price">&#36;649</p>
+                </div>
+                <div class="card__action">-50&#37;</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card--main">
+            <img class="card__img" src="img/game_10.jpg" alt="" />
+            <div class="card__content">
+              <div class="card__header">
+                <div class="card-category">
+                  <span class="card-category__green">
+                    <svg
+                      width="6"
+                      height="6"
+                      viewBox="0 0 6 6"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="3" cy="3" r="3" fill="" />
+                    </svg>
+                    <p>Card Game</p>
+                  </span>
+                </div>
+                <p class="card__title">Witcher 3: Wild Hunt</p>
+                <div class="card__rating">
+                  <svg
+                    class="card__rating__star--active"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <svg
+                    class="card__rating__star--active"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <svg
+                    class="card__rating__star--active"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <svg
+                    class="card__rating__star--active"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <svg
+                    class="card__rating__star--active"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+
+                  <p class="card__text">299,890</p>
+                </div>
+                <p class="card__text card__description">
+                  Will only be usable in the new Classic Format when it is
+                  released
+                </p>
+              </div>
+              <div class="card__footer">
+                <div class="card__footer__prices">
+                  <p class="card__price card__price--old">&#36;1,299</p>
+                  <p class="card__price">&#36;649</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card--main">
+            <img class="card__img" src="img/game_11.jpg" alt="" />
+            <div class="card__content">
+              <div class="card__header">
+                <div class="card-category">
+                  <span class="card-category__violet">
+                    <svg
+                      width="6"
+                      height="6"
+                      viewBox="0 0 6 6"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="3" cy="3" r="3" fill="" />
+                    </svg>
+                    <p>Shooter</p>
+                  </span>
+                </div>
+                <p class="card__title">Guardians of the Galaxy</p>
+                <div class="card__rating">
+                  <svg
+                    class="card__rating__star--active"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <svg
+                    class="card__rating__star--active"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <svg
+                    class="card__rating__star--active"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <svg
+                    class="card__rating__star--disabled"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <svg
+                    class="card__rating__star--disabled"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+
+                  <p class="card__text">29</p>
+                </div>
+                <p class="card__text card__description">In-Game Content</p>
+              </div>
+              <div class="card__footer">
+                <div class="card__footer__prices">
+                  <p class="card__price card__price--old">&#36;1,299</p>
+                  <p class="card__price">&#36;649</p>
+                </div>
+                <div class="card__action">-50&#37;</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card--main">
+            <img class="card__img" src="img/game_12.jpg" alt="" />
+            <div class="card__content">
+              <div class="card__header">
+                <div class="card-category">
+                  <span class="card-category__violet">
+                    <svg
+                      width="6"
+                      height="6"
+                      viewBox="0 0 6 6"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="3" cy="3" r="3" fill="" />
+                    </svg>
+                    <p>Shooter</p>
+                  </span>
+                </div>
+                <p class="card__title">Crash Team Racing</p>
+                <div class="card__rating">
+                  <svg
+                    class="card__rating__star--active"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <svg
+                    class="card__rating__star--active"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <svg
+                    class="card__rating__star--active"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <svg
+                    class="card__rating__star--active"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <svg
+                    class="card__rating__star--half"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+
+                  <p class="card__text">9,199</p>
+                </div>
+                <p class="card__text card__description">
+                  Get the Captain Price Operator included with purchase
+                </p>
+              </div>
+              <div class="card__footer">
+                <div class="card__footer__prices">
+                  <p class="card__price card__price--old">&#36;1,299</p>
+                  <p class="card__price">&#36;649</p>
+                </div>
+                <div class="card__action">-50&#37;</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card--main">
+            <img class="card__img" src="img/game_13.jpg" alt="" />
+            <div class="card__content">
+              <div class="card__header">
+                <div class="card-category">
+                  <span class="card-category__red">
+                    <svg
+                      width="6"
+                      height="6"
+                      viewBox="0 0 6 6"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="3" cy="3" r="3" fill="" />
+                    </svg>
+                    <p>Multiplayer RPG</p>
+                  </span>
+                </div>
+                <p class="card__title">Spider-Man</p>
+                <div class="card__rating">
+                  <svg
+                    class="card__rating__star--active"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <svg
+                    class="card__rating__star--active"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <svg
+                    class="card__rating__star--active"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <svg
+                    class="card__rating__star--active"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <svg
+                    class="card__rating__star--half"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+
+                  <p class="card__text">9,199</p>
+                </div>
+                <p class="card__text card__description">
+                  Includes access to World of Warcraft, Burning Crusade Classic,
+                  and WoW Classic!
+                </p>
+              </div>
+              <div class="card__footer">
+                <div class="card__footer__prices">
+                  <p class="card__price">&#36;649</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card--main">
+            <img class="card__img" src="img/game_empty.png" alt="" />
+            <div class="card__content">
+              <div class="card__header">
+                <div class="card-category">
+                  <span class="card-category__blue">
+                    <svg
+                      width="6"
+                      height="6"
+                      viewBox="0 0 6 6"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="3" cy="3" r="3" fill="" />
+                    </svg>
+                    <p>Action RPG</p>
+                  </span>
+                </div>
+                <p class="card__title">Dragon Age 5</p>
+                <div class="card__rating">
+                  <svg
+                    class="card__rating__star--disabled"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <svg
+                    class="card__rating__star--disabled"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <svg
+                    class="card__rating__star--disabled"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <svg
+                    class="card__rating__star--disabled"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+                  <svg
+                    class="card__rating__star--disabled"
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient id="linear-gradient">
+                      <stop
+                        offset="0%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #fec84b; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="50%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #eaecf0; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <path
+                      d="M6 0L8.03951 3.37501L12 4.20163L9.3 7.11411L9.7082 11L6 9.42501L2.2918 11L2.7 7.11411L0 4.20163L3.96049 3.37501L6 0Z"
+                      fill=""
+                    />
+                  </svg>
+
+                  <p class="card__text">0</p>
+                </div>
+                <p class="card__text card__description">Non released</p>
+              </div>
+              <div class="card__footer">
+                <div class="card__footer__prices"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="main__pagination">
+          <svg
+            class="main__pagination__left"
+            width="6"
+            height="10"
+            viewBox="0 0 6 10"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1 5L0.434314 4.43431C0.284285 4.58434 0.2 4.78783 0.2 5C0.199999 5.21217 0.284285 5.41566 0.434314 5.56568L1 5ZM4.43431 9.56569C4.74673 9.8781 5.25327 9.8781 5.56568 9.56569C5.8781 9.25327 5.8781 8.74673 5.56568 8.43431L4.43431 9.56569ZM5.56569 1.56569C5.8781 1.25327 5.8781 0.746734 5.56569 0.434315C5.25327 0.121895 4.74673 0.121895 4.43431 0.434314L5.56569 1.56569ZM5.56568 8.43431L1.56569 4.43431L0.434314 5.56568L4.43431 9.56569L5.56568 8.43431ZM1.56568 5.56569L5.56569 1.56569L4.43431 0.434314L0.434314 4.43431L1.56568 5.56569Z"
+              fill="#101828"
+            />
+          </svg>
+          <div class="main__pagination__btns">
+            <a href="#" class="main__pagination__btn">1</a>
+            <a
+              href="#"
+              class="main__pagination__btn main__pagination__btn--unactive"
+              >2</a
+            >
+            <a
+              href="#"
+              class="main__pagination__btn main__pagination__btn--unactive"
+              >3</a
+            >
+            <a
+              href="#"
+              class="main__pagination__btn main__pagination__btn--selected"
+              >4</a
+            >
+            <a
+              href="#"
+              class="main__pagination__btn main__pagination__btn--unactive"
+              >5</a
+            >
+            <a
+              href="#"
+              class="main__pagination__btn main__pagination__btn--unactive"
+              >...</a
+            >
+            <a
+              href="#"
+              class="main__pagination__btn main__pagination__btn--unactive"
+              >99</a
+            >
+          </div>
+          <svg
+            class="main__pagination__right"
+            width="6"
+            height="10"
+            viewBox="0 0 6 10"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M5 5L5.56569 5.56569C5.71571 5.41566 5.8 5.21217 5.8 5C5.8 4.78783 5.71572 4.58434 5.56569 4.43432L5 5ZM1.56569 0.434315C1.25327 0.121895 0.746735 0.121895 0.434315 0.434315C0.121896 0.746734 0.121896 1.25327 0.434315 1.56569L1.56569 0.434315ZM0.434315 8.43431C0.121895 8.74673 0.121895 9.25327 0.434314 9.56569C0.746734 9.8781 1.25327 9.8781 1.56569 9.56569L0.434315 8.43431ZM0.434315 1.56569L4.43431 5.56569L5.56569 4.43432L1.56569 0.434315L0.434315 1.56569ZM4.43432 4.43431L0.434315 8.43431L1.56569 9.56569L5.56569 5.56569L4.43432 4.43431Z"
+              fill="#101828"
+            />
+          </svg>
+        </section>
+
+        <section class="main__question">
+          <div class="main__question__title">Frequently asked questions</div>
+          <div class="main__question__subtitle">
+            Everything you need to know about the games.
+          </div>
+          <div class="main__question__item">
+            <div class="main__question__item__header">
+              <p class="main__question__item__header__title">How does work?</p>
+              <svg
+                class="main__question__item__header__iconOpen"
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.8 5.8C9.8 5.35817 9.44183 5 9 5C8.55817 5 8.2 5.35817 8.2 5.8H9.8ZM8.2 12.2C8.2 12.6418 8.55817 13 9 13C9.44183 13 9.8 12.6418 9.8 12.2H8.2ZM5.8 8.2C5.35817 8.2 5 8.55817 5 9C5 9.44183 5.35817 9.8 5.8 9.8V8.2ZM12.2 9.8C12.6418 9.8 13 9.44183 13 9C13 8.55817 12.6418 8.2 12.2 8.2V9.8ZM16.2 9C16.2 12.9765 12.9765 16.2 9 16.2V17.8C13.8601 17.8 17.8 13.8601 17.8 9H16.2ZM9 16.2C5.02355 16.2 1.8 12.9765 1.8 9H0.2C0.2 13.8601 4.13989 17.8 9 17.8V16.2ZM1.8 9C1.8 5.02355 5.02355 1.8 9 1.8V0.2C4.13989 0.2 0.2 4.13989 0.2 9H1.8ZM9 1.8C12.9765 1.8 16.2 5.02355 16.2 9H17.8C17.8 4.13989 13.8601 0.2 9 0.2V1.8ZM8.2 5.8V12.2H9.8V5.8H8.2ZM5.8 9.8H12.2V8.2H5.8V9.8Z"
+                  fill="#7F56D9"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <div class="main__question__item">
+            <div class="main__question__item__header">
+              <p class="main__question__item__header__title">What is a game?</p>
+              <svg
+                id="openSecondCategory"
+                href="#text"
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="iconPath"
+                  d="M5.8 8.2C5.35817 8.2 5 8.55817 5 9C5 9.44183 5.35817 9.8 5.8 9.8V8.2ZM12.2 9.8C12.6418 9.8 13 9.44183 13 9C13 8.55817 12.6418 8.2 12.2 8.2V9.8ZM16.2 9C16.2 12.9765 12.9765 16.2 9 16.2V17.8C13.8601 17.8 17.8 13.8601 17.8 9H16.2ZM9 16.2C5.02355 16.2 1.8 12.9765 1.8 9H0.2C0.2 13.8601 4.13989 17.8 9 17.8V16.2ZM1.8 9C1.8 5.02355 5.02355 1.8 9 1.8V0.2C4.13989 0.2 0.2 4.13989 0.2 9H1.8ZM9 1.8C12.9765 1.8 16.2 5.02355 16.2 9H17.8C17.8 4.13989 13.8601 0.2 9 0.2V1.8ZM5.8 9.8H12.2V8.2H5.8V9.8Z"
+                  fill="#7F56D9"
+                />
+              </svg>
+            </div>
+            <div class="main__question__item__textContent">
+              <div class="main__question__item__textContent__text">
+                A video game or computer game is an electronic game that
+                involves interaction with a user interface or input device –
+                such as a joystick, controller, keyboard, or motion sensing
+                device – to generate visual feedback. This feedback is shown on
+                a video display device, such as a TV set, monitor, touchscreen,
+                or virtual reality headset. A video game or computer game is an
+                electronic game that involves interaction with a user interface
+                or input device – such as a joystick, controller, keyboard, or
+                motion sensing device – to generate visual feedback. This
+                feedback is shown on a video display device, such as a TV set,
+                monitor, touchscreen, or virtual reality headset.
+              </div>
+
+              <ul
+                class="main__question__item__textContent__text main__question__item__textContent__list"
+              >
+                <li>motion sensing device,</li>
+                <li>controller,</li>
+                <li>keyboard,</li>
+                <li>joystick.</li>
+              </ul>
+
+              <p class="main__question__item__textContent__subtitle">
+                Visual feedback.
+              </p>
+
+              <div class="main__question__item__textContent__text">
+                A video game or computer game is an electronic game that
+                involves interaction with a user interface or input device –
+                such as a joystick, controller, keyboard, or motion sensing
+                device – to generate visual feedback.
+              </div>
+            </div>
+          </div>
+
+          <div class="main__question__item">
+            <div class="main__question__item__header">
+              <p class="main__question__item__header__title">
+                Is there a free trial available?
+              </p>
+              <svg
+                class="main__question__item__header__iconOpen"
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.8 5.8C9.8 5.35817 9.44183 5 9 5C8.55817 5 8.2 5.35817 8.2 5.8H9.8ZM8.2 12.2C8.2 12.6418 8.55817 13 9 13C9.44183 13 9.8 12.6418 9.8 12.2H8.2ZM5.8 8.2C5.35817 8.2 5 8.55817 5 9C5 9.44183 5.35817 9.8 5.8 9.8V8.2ZM12.2 9.8C12.6418 9.8 13 9.44183 13 9C13 8.55817 12.6418 8.2 12.2 8.2V9.8ZM16.2 9C16.2 12.9765 12.9765 16.2 9 16.2V17.8C13.8601 17.8 17.8 13.8601 17.8 9H16.2ZM9 16.2C5.02355 16.2 1.8 12.9765 1.8 9H0.2C0.2 13.8601 4.13989 17.8 9 17.8V16.2ZM1.8 9C1.8 5.02355 5.02355 1.8 9 1.8V0.2C4.13989 0.2 0.2 4.13989 0.2 9H1.8ZM9 1.8C12.9765 1.8 16.2 5.02355 16.2 9H17.8C17.8 4.13989 13.8601 0.2 9 0.2V1.8ZM8.2 5.8V12.2H9.8V5.8H8.2ZM5.8 9.8H12.2V8.2H5.8V9.8Z"
+                  fill="#7F56D9"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <div class="main__question__item">
+            <div class="main__question__item__header">
+              <p class="main__question__item__header__title">
+                How does billing work?
+              </p>
+              <svg
+                class="main__question__item__header__iconOpen"
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.8 5.8C9.8 5.35817 9.44183 5 9 5C8.55817 5 8.2 5.35817 8.2 5.8H9.8ZM8.2 12.2C8.2 12.6418 8.55817 13 9 13C9.44183 13 9.8 12.6418 9.8 12.2H8.2ZM5.8 8.2C5.35817 8.2 5 8.55817 5 9C5 9.44183 5.35817 9.8 5.8 9.8V8.2ZM12.2 9.8C12.6418 9.8 13 9.44183 13 9C13 8.55817 12.6418 8.2 12.2 8.2V9.8ZM16.2 9C16.2 12.9765 12.9765 16.2 9 16.2V17.8C13.8601 17.8 17.8 13.8601 17.8 9H16.2ZM9 16.2C5.02355 16.2 1.8 12.9765 1.8 9H0.2C0.2 13.8601 4.13989 17.8 9 17.8V16.2ZM1.8 9C1.8 5.02355 5.02355 1.8 9 1.8V0.2C4.13989 0.2 0.2 4.13989 0.2 9H1.8ZM9 1.8C12.9765 1.8 16.2 5.02355 16.2 9H17.8C17.8 4.13989 13.8601 0.2 9 0.2V1.8ZM8.2 5.8V12.2H9.8V5.8H8.2ZM5.8 9.8H12.2V8.2H5.8V9.8Z"
+                  fill="#7F56D9"
+                />
+              </svg>
+            </div>
           </div>
         </section>
       </div>
     </main>
 
-    <footer></footer>
+    <footer class="footer">
+  <section class="footer__content">
+    <div class="footer__subscribe">
+      <div class="footer__subscribe__text">
+        <p class="footer__title">Join our newsletter</p>
+        <p class="footer__subtitle">
+          We’ll send you a nice letter one per week. No spam.
+        </p>
+      </div>
+      <div class="footer__input-block">
+        <input type="text" class="footer__input" placeholder="Enter mail" />
+        <div class="footer__btn">Subscribe</div>
+      </div>
+    </div>
+    <div class="footer__link">
+      <div class="footer__link-block">
+        <a href="#">Categories</a>
+        <a href="#">Strategy</a>
+        <a href="#">Action</a>
+        <a href="#">Shooter</a>
+        <a href="#">Card Game</a>
+        <a href="#">Simulator</a>
+        <a href="#">RPG</a>
+        <a href="#">Multiplayer</a>
+      </div>
+
+      <div class="footer__link-block">
+        <a href="#">Company</a>
+        <a href="#">About us</a>
+        <a href="#">Careers</a>
+        <a href="#">Press</a>
+        <a href="#">News</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <div class="footer__link-block">
+        <a href="#">Legal</a>
+        <a href="#">Terms</a>
+        <a href="#"> Privacy</a>
+        <a href="#">Cookies</a>
+        <a href="#">Licenses</a>
+        <a href="#">Settings</a>
+      </div>
+
+      <div class="footer__link-block">
+        <a href="#">Legal</a>
+        <a href="#">Twitter</a>
+        <a href="#">Facebook</a>
+        <a href="#">Dribbble</a>
+        <a href="#">GitHub</a>
+      </div>
+    </div>
+    <p class="footer__copy">Copyright © GameVendor, 2022</p>
+  </section>
+</footer>
 
 
     <!-- jquery -->
     <script
-      src="https://code.jquery.com/jquery-3.6.0.slim.js"
-      integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
     <!-- SLICK SLIDER -->
@@ -216,6 +3301,6 @@
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
-    <script src="js/app.js?_v=20220305022640"></script>
+    <script src="js/app.js?_v=20220311011424"></script>
   </body>
 </html>

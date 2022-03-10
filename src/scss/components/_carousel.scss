@@ -13,6 +13,16 @@
   align-items: center;
   justify-content: center;
 
+  @include respond(sm) {
+    font-size: 14px;
+  }
+
+  .slider__item {
+    @include respond(sm) {
+      padding: 0 25px;
+    }
+  }
+
   .slick-track {
     display: flex;
   }
@@ -34,9 +44,17 @@
   .slick-prev {
     left: 30px;
     background: url("../img/carousel_left.svg") 0 0 no-repeat;
+
+    @include respond(sm) {
+      left: 10px;
+    }
   }
   .slick-next {
     right: 30px;
     background: url("../img/carousel_right.svg") 0 0 no-repeat;
+
+    @include respond(sm) {
+      right: 10px;
+    }
   }
 }

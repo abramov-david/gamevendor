@@ -1,0 +1,106 @@
+.footer {
+  background-color: #1d2939;
+
+  &__content {
+    max-width: 1221px;
+    margin: 0 auto;
+  }
+
+  &__subscribe {
+    padding: 56px 0;
+    border-bottom: 1px solid #344054;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: $font-md-bg;
+    color: $color-white;
+    margin-bottom: 4px;
+  }
+
+  &__subtitle {
+    font-size: $font-md;
+    color: $color-grey--light-3;
+  }
+
+  &__input-block {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__input {
+    width: 47rem;
+    height: 44px;
+    border-radius: $br-md;
+    padding-left: 18px;
+    border: none;
+    background-color: $color-grey--light;
+    font-family: inherit;
+    font-size: $font-md;
+
+    &::placeholder {
+      color: $color-grey--light-3;
+      font-size: $font-md;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 11.4rem;
+    height: 44px;
+    background-color: $color-violet;
+    font-size: $font-md;
+    color: $color-white;
+    border-radius: $br-md;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 88px;
+
+    padding-top: 56px;
+  }
+
+  &__link-block {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 25%;
+
+    a {
+      text-decoration: none;
+      font-size: $font-md;
+      color: $color-white;
+      transition: all 0.2s;
+
+      &:hover {
+        color: $color-grey--light;
+      }
+    }
+    & a:not(:last-child),
+    & a:not(:first-child) {
+      margin-bottom: 12px;
+    }
+
+    & a:first-child {
+      margin-bottom: 2rem !important;
+      font-size: $font-reg;
+      color: $color-grey--light-3;
+    }
+  }
+
+  &__copy {
+    font-size: $font-md;
+    color: $color-grey;
+    padding-bottom: 64px;
+  }
+}

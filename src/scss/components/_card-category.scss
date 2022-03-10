@@ -1,0 +1,52 @@
+.card-category {
+  display: flex;
+  font-size: $font-sm;
+
+  span {
+    display: flex;
+    gap: 6px;
+    padding: 2px 8px;
+    border-radius: $br-sm;
+    align-items: center;
+  }
+
+  &__blue {
+    color: $color-blue;
+    svg {
+      fill: $color-blue;
+    }
+    background-color: $color-blue--light;
+  }
+
+  &__red {
+    color: $color-red;
+    svg {
+      fill: $color-red;
+    }
+    background-color: $color-red--light;
+  }
+
+  &__orange {
+    color: $color-orange;
+    svg {
+      fill: $color-orange;
+    }
+    background-color: $color-orange--light;
+  }
+
+  &__violet {
+    color: $color-violet;
+    svg {
+      fill: $color-violet;
+    }
+    background-color: $color-violet--light;
+  }
+
+  &__green {
+    color: $color-green;
+    svg {
+      fill: $color-green;
+    }
+    background-color: $color-green--light;
+  }
+}

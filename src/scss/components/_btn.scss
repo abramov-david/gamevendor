@@ -1,0 +1,23 @@
+.btn {
+  border-radius: $br-md;
+  height: 4.4rem;
+  border: none;
+  cursor: pointer;
+  font-size: $font-md;
+  font-weight: $weight-md;
+  transition: all 0.2s;
+
+  &--big {
+    width: 19.2rem;
+  }
+
+  &--violet {
+    color: $color-white;
+    background-color: $color-violet;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+}

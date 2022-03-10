@@ -1,5 +1,10 @@
 .header {
   &__main {
+    @include respond(sm) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
     border-bottom: 1px solid $color-grey--light-2;
     &--wrapper {
       display: flex;
@@ -7,6 +12,10 @@
       justify-content: space-between;
       margin: 0 115px;
       min-height: 7.2rem;
+
+      @include respond(md) {
+        justify-content: center;
+      }
     }
   }
   &__location {
@@ -14,12 +23,20 @@
     align-items: center;
     gap: 1.15rem;
     font-size: $font-reg;
+
+    @include respond(md) {
+      display: none;
+    }
   }
   &__btns {
     display: flex;
     align-items: center;
     gap: 4.5rem;
     cursor: pointer;
+
+    @include respond(md) {
+      display: none;
+    }
   }
   &__links {
     min-height: 64px;
@@ -27,6 +44,14 @@
     align-items: center;
     justify-content: space-between;
     margin: 0 112px;
+
+    @include respond(bg) {
+      margin: 0 20px !important;
+    }
+
+    @include respond(md) {
+      display: none;
+    }
   }
   &__link {
     text-decoration: none;

@@ -1,0 +1,100 @@
+.card {
+  width: 280px;
+  border-radius: $br-reg;
+  display: flex;
+  flex-direction: column;
+
+  &__content {
+    padding: 0 1.2rem;
+  }
+
+  &__header {
+    min-height: 19rem;
+  }
+
+  &__title {
+    color: $color-black;
+    font-size: $font-md-bg;
+    font-weight: $weight-xl;
+    margin: 14px 0;
+  }
+  &__rating {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 12px;
+
+    &__star--disabled {
+      fill: $color-grey--light-2;
+    }
+    &__star--active {
+      fill: $color-yellow;
+    }
+    &__star--half {
+      fill: url(#linear-gradient);
+    }
+  }
+
+  &__text {
+    color: $color-grey--light-3;
+  }
+  &__description {
+    min-height: 6rem;
+  }
+
+  &__img {
+    margin-bottom: 2rem;
+  }
+
+  &--main {
+    background-color: $color-white;
+    padding: 1.2rem;
+  }
+
+  &--new {
+    background-color: transparent;
+    border: 2px dashed $color-violet--light-2;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    line-height: 2rem;
+
+    .card__text {
+      width: 192px;
+      text-align: center;
+    }
+  }
+
+  &__price {
+    font-size: $font-md;
+    color: $color-black;
+    font-weight: $weight-xl;
+    text-transform: uppercase;
+
+    &--old {
+      color: $color-grey--light;
+      text-decoration: line-through;
+    }
+  }
+
+  &__action {
+    font-size: $font-sm;
+    border-radius: $br-sm;
+    background-color: $color-green-2;
+    color: $color-white;
+    padding: 4px 6px;
+  }
+
+  &__footer {
+    &__prices {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    padding: 17px 0;
+    border-top: 1px solid $color-grey--light-2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

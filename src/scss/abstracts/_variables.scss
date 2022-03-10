@@ -7,9 +7,11 @@ $color-black: #101828;
 $color-grey: #667085;
 $color-grey--light: #d0d5dd;
 $color-grey--light-2: #eaecf0;
+$color-grey--light-3: #98a2b3;
 
 $color-violet: #7f56d9;
 $color-violet--light: #f4ebff;
+$color-violet--light-2: #d6bbfb;
 
 $color-blue: #0086c9;
 $color-blue--light: #f0f9ff;
@@ -21,7 +23,10 @@ $color-orange: #dc6803;
 $color-orange--light: #fffaeb;
 
 $color-green: #039855;
+$color-green-2: #669f2a;
 $color-green--light: #ecfdf3;
+
+$color-yellow: #fec84b;
 
 $weight-sm: 400;
 $weight-md: 500;
@@ -31,10 +36,14 @@ $weight-xl: 600;
 $font-sm: 1.2rem;
 $font-reg: 1.4rem;
 $font-md: 1.6rem;
+$font-md-bg: 1.8rem;
+$font-xl-sm: 3.2rem;
 $font-xl: 4rem;
 $font-xxl: 5.2rem;
 
 //border-radius
 
 $br-sm: 4px;
+$br-md: 8px;
+$br-reg: 12px;
 $br-bg: 16px;

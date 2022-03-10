@@ -3,8 +3,13 @@
 
 @import "components/carousel";
 @import "components/breadcrumbs";
+@import "components/user-category";
+@import "components/card";
+@import "components/btn";
+@import "components/card-category";
 
 @import "base/base";
 
 @import "layout/header";
-@import "layout/main";
+@import "layout/footer";
+@import "pages/index";

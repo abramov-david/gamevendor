@@ -1,0 +1,349 @@
+.main {
+  background-color: #f9fafb;
+
+  &__content {
+    max-width: calc(1221px + 48px);
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  &__title {
+    color: $color-black;
+    font-size: $font-xxl;
+    font-weight: $weight-xl;
+    padding-bottom: 4rem;
+
+    @include respond(sm) {
+      font-size: 28px;
+      padding-bottom: 2rem;
+    }
+  }
+  &__banner {
+    border-radius: $br-md;
+    color: $color-white;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 6rem;
+    background-image: url("../img/Banner.png");
+    background-size: cover;
+    height: 100%;
+    padding: 72px;
+
+    @include respond(xlSm) {
+      padding: 50px;
+    }
+
+    @include respond(bg) {
+      padding: 50px !important;
+    }
+
+    @include respond(md) {
+      padding: 30px !important;
+      overflow: hidden;
+    }
+
+    @include respond(sm) {
+      background-position: 66%;
+      min-height: 448px;
+      padding: 0;
+
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    &__text {
+      font-size: $font-md;
+      margin-bottom: 30px;
+      line-height: 2.45rem;
+
+      @include respond(md) {
+        font-size: $font-reg !important;
+      }
+      @include respond(sm) {
+        width: 225px;
+        padding: 0 20px;
+        margin-left: 15px;
+      }
+    }
+    &__btn {
+      width: 141px;
+      height: 44px;
+      background-color: $color-white;
+      border-radius: $br-md;
+      border: none;
+      color: $color-black;
+      font-size: $font-md;
+      font-weight: $weight-xl;
+      cursor: pointer;
+      transition: all 0.2s;
+
+      @include respond(sm) {
+        position: absolute;
+        bottom: -90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 216px;
+      }
+
+      &:hover {
+        background-color: $color-violet--light;
+      }
+    }
+
+    &__title {
+      font-size: $font-xl;
+      font-weight: $weight-xl;
+      margin-bottom: 2.5rem;
+
+      @include respond(xlSm) {
+        font-size: 32px;
+      }
+
+      @include respond(sm) {
+        width: 200px;
+        font-size: 24px !important;
+        text-align: center;
+        margin-left: 25px;
+      }
+    }
+
+    &__info {
+      max-width: 31.5rem;
+      display: flex;
+      flex-direction: column;
+
+      @include respond(bg) {
+        max-width: 25rem;
+      }
+
+      @include respond(sm) {
+        z-index: 9;
+        position: absolute;
+      }
+    }
+
+    &__img {
+      position: absolute;
+      bottom: 0px;
+      right: 8%;
+
+      @include respond(xlSm) {
+        width: 60rem;
+        right: 5%;
+      }
+
+      @include respond(bg) {
+        width: 55rem !important;
+        right: -3% !important;
+      }
+
+      @include respond(md) {
+        width: 45rem !important;
+        right: -10% !important;
+      }
+
+      @include respond(sm) {
+        width: 32rem !important;
+        bottom: -23%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 8;
+      }
+    }
+  }
+
+  &__searchSort {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 32px;
+
+    &__block {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+
+      &--search {
+        flex: 2;
+      }
+
+      &--select {
+        flex: 1;
+
+        @include respond(sm) {
+          display: none !important;
+        }
+      }
+
+      label {
+        color: $color-grey;
+        margin-bottom: 4px;
+      }
+      &__input {
+        height: 44px;
+        border: 1px solid $color-grey--light;
+        border-radius: $br-md;
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        &--category {
+          gap: 4px;
+          padding: 10px 11px;
+        }
+      }
+      input {
+        font-size: $font-md;
+        padding-left: 4.6rem;
+
+        &:focus {
+          outline: none;
+        }
+        &::placeholder {
+          color: #98a2b3;
+        }
+      }
+    }
+    &__icon {
+      position: absolute;
+      top: 50%;
+      left: 20px;
+    }
+  }
+
+  &__filters {
+    display: flex;
+    align-items: center;
+    gap: $br-md;
+    padding-bottom: 4rem;
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.2rem;
+    padding-bottom: 4rem;
+  }
+
+  &__pagination {
+    border-radius: $br-md;
+    background-color: $color-white;
+    height: 5.2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+
+    &__left {
+      opacity: 0.5;
+    }
+
+    &__btns {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    &__btn {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      background-color: $color-violet;
+      border-radius: $br-md;
+      color: $color-white;
+      font-weight: $weight-md;
+
+      &--unactive {
+        background-color: transparent;
+        color: $color-black;
+      }
+      &--selected {
+        background-color: $color-violet--light;
+        color: $color-violet;
+      }
+    }
+  }
+
+  /* QUESTION BLOCK */
+  &__question {
+    text-align: center;
+    padding-bottom: 8rem;
+
+    &__title {
+      font-size: $font-xl-sm;
+      color: $color-black;
+      margin-bottom: 2rem;
+      margin-top: 8rem;
+      font-weight: $weight-xl;
+    }
+
+    &__subtitle {
+      font-size: $font-md;
+      color: $color-grey;
+      margin-bottom: 2rem;
+    }
+
+    &__item {
+      svg {
+        cursor: pointer;
+      }
+
+      &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2.4rem 0;
+
+        &__title {
+          font-size: $font-md-bg;
+          font-weight: $weight-xl;
+        }
+      }
+
+      &__textContent {
+        text-align: start;
+
+        &__text {
+          font-size: $font-md;
+          color: $color-grey;
+          line-height: 2.5rem;
+
+          &:first-child {
+            margin-bottom: 2rem;
+          }
+
+          &:last-child {
+            margin-bottom: 4rem;
+          }
+        }
+
+        &__list {
+          list-style: none;
+          margin-left: 1.5rem;
+
+          & li::before {
+            content: "\2022";
+            color: $color-violet;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+          }
+
+          margin-bottom: 3rem;
+        }
+
+        &__subtitle {
+          font-size: $font-md;
+          font-weight: $weight-md;
+          margin-bottom: 1.6rem;
+        }
+      }
+      border-bottom: 1px solid $color-grey--light-2;
+    }
+  }
+}
