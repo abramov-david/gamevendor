@@ -1,5 +1,10 @@
 .footer {
   background-color: #1d2939;
+  padding: 0 24px;
+
+  @include respond(sm) {
+    padding: 0 10px !important;
+  }
 
   &__content {
     max-width: 1221px;
@@ -10,7 +15,12 @@
     padding: 56px 0;
     border-bottom: 1px solid #344054;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+
+    @include respond(bg) {
+      flex-direction: column;
+    }
   }
 
   &__title {
@@ -26,8 +36,13 @@
 
   &__input-block {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 8px;
+
+    @include respond(bg) {
+      margin-top: 32px;
+    }
   }
 
   &__input {
@@ -39,6 +54,11 @@
     background-color: $color-grey--light;
     font-family: inherit;
     font-size: $font-md;
+    flex-grow: 1;
+
+    @include respond(md) {
+      width: 28rem;
+    }
 
     &::placeholder {
       color: $color-grey--light-3;
@@ -61,14 +81,21 @@
     font-size: $font-md;
     color: $color-white;
     border-radius: $br-md;
+    flex-grow: 1;
   }
 
   &__link {
     display: flex;
     justify-content: space-between;
     padding-bottom: 88px;
+    flex-wrap: wrap;
 
     padding-top: 56px;
+
+    @include respond(sm) {
+      flex-direction: column;
+      gap: 30px;
+    }
   }
 
   &__link-block {

@@ -50,3 +50,15 @@
     background-color: $color-green--light;
   }
 }
+
+#category_2 {
+  @include respond(bg) {
+    display: none;
+  }
+}
+
+#category_1 {
+  @include respond(md) {
+    display: none;
+  }
+}

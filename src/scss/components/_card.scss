@@ -1,8 +1,18 @@
 .card {
   width: 280px;
+  min-height: 450px;
   border-radius: $br-reg;
   display: flex;
   flex-direction: column;
+
+  @include respond(bg) {
+    max-width: 380px;
+    flex-grow: 1;
+  }
+
+  @include respond(xl) {
+    max-width: 280px;
+  }
 
   &__content {
     padding: 0 1.2rem;
@@ -49,15 +59,28 @@
   &--main {
     background-color: $color-white;
     padding: 1.2rem;
+
+    @include respond(sm) {
+      padding: 0px !important;
+    }
   }
 
   &--new {
+    min-height: 490px;
     background-color: transparent;
     border: 2px dashed $color-violet--light-2;
     gap: 30px;
     align-items: center;
     justify-content: center;
     line-height: 2rem;
+
+    @include respond(md) {
+      flex-basis: 50% !important;
+    }
+
+    @include respond(sm) {
+      height: 200px !important;
+    }
 
     .card__text {
       width: 192px;

@@ -21,10 +21,20 @@
       @content;
     } //320px
   }
+  @if $breakpoint == md-sm {
+    @media only screen and (max-width: 43em) {
+      @content;
+    } //600px
+  }
   @if $breakpoint == md {
     @media only screen and (max-width: 48em) {
       @content;
     } //768px
+  }
+  @if $breakpoint == md-850 {
+    @media only screen and (max-width: 53em) {
+      @content;
+    } //850px
   }
   @if $breakpoint == bg {
     @media only screen and (max-width: 64em) {
@@ -40,5 +50,17 @@
     @media only screen and (min-width: 90em) {
       @content;
     } //1440px
+  }
+
+  @if $breakpoint == minSm {
+    @media only screen and (min-width: 20em) {
+      @content;
+    } //368px
+  }
+
+  @if $breakpoint == minMd {
+    @media only screen and (min-width: 48em) {
+      @content;
+    } //768px
   }
 }

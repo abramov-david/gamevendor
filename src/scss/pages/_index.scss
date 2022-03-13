@@ -5,6 +5,10 @@
     max-width: calc(1221px + 48px);
     margin: 0 auto;
     padding: 0 24px;
+
+    @include respond(sm) {
+      padding: 2rem;
+    }
   }
   &__title {
     color: $color-black;
@@ -36,12 +40,20 @@
       padding: 50px !important;
     }
 
+    @include respond(md-850) {
+      padding: 40px !important;
+    }
+
     @include respond(md) {
       padding: 30px !important;
       overflow: hidden;
     }
 
-    @include respond(sm) {
+    @include respond(md-sm) {
+      padding: 25px !important;
+    }
+
+    @include respond(md-sm) {
       background-position: 66%;
       min-height: 448px;
       padding: 0;
@@ -59,10 +71,15 @@
       @include respond(md) {
         font-size: $font-reg !important;
       }
+
+      @include respond(md-sm) {
+        line-height: 15px;
+      }
+
       @include respond(sm) {
         width: 225px;
         padding: 0 20px;
-        margin-left: 15px;
+        margin-left: 0%;
       }
     }
     &__btn {
@@ -77,12 +94,22 @@
       cursor: pointer;
       transition: all 0.2s;
 
+      @include respond(md-sm) {
+        position: absolute;
+        bottom: -2%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 216px;
+        z-index: 99;
+      }
+
       @include respond(sm) {
         position: absolute;
         bottom: -90%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 216px;
+        z-index: 99;
       }
 
       &:hover {
@@ -96,14 +123,16 @@
       margin-bottom: 2.5rem;
 
       @include respond(xlSm) {
-        font-size: 32px;
+        font-size: 32px !important;
       }
 
+      @include respond(md-sm) {
+        font-size: 15px !important;
+      }
       @include respond(sm) {
         width: 200px;
         font-size: 24px !important;
         text-align: center;
-        margin-left: 25px;
       }
     }
 
@@ -115,10 +144,14 @@
       @include respond(bg) {
         max-width: 25rem;
       }
-
+      @include respond(md-sm) {
+        max-width: 20rem;
+        margin-left: 18%;
+      }
       @include respond(sm) {
         z-index: 9;
         position: absolute;
+        margin-left: 0%;
       }
     }
 
@@ -137,8 +170,18 @@
         right: -3% !important;
       }
 
+      @include respond(md-850) {
+        width: 45rem !important;
+        right: 0% !important;
+      }
+
       @include respond(md) {
         width: 45rem !important;
+        right: -10% !important;
+      }
+
+      @include respond(md-sm) {
+        width: 35rem !important;
         right: -10% !important;
       }
 
@@ -157,6 +200,10 @@
     align-items: center;
     gap: 16px;
     margin-bottom: 32px;
+
+    @include respond(md-sm) {
+      flex-wrap: wrap;
+    }
 
     &__block {
       display: flex;
@@ -214,6 +261,7 @@
   &__filters {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: $br-md;
     padding-bottom: 4rem;
   }
@@ -221,14 +269,27 @@
   &__cards {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 3.2rem;
     padding-bottom: 4rem;
+
+    @include respond(bg) {
+      justify-content: center;
+    }
+    @include respond(xl) {
+      justify-content: flex-start;
+    }
   }
 
   &__pagination {
+    display: none !important;
     border-radius: $br-md;
     background-color: $color-white;
     height: 5.2rem;
+
+    @include respond(minMd) {
+      display: flex !important;
+    }
 
     display: flex;
     align-items: center;
@@ -279,6 +340,10 @@
       margin-bottom: 2rem;
       margin-top: 8rem;
       font-weight: $weight-xl;
+
+      @include respond(sm) {
+        font-size: $font-xl-reg;
+      }
     }
 
     &__subtitle {
@@ -301,6 +366,10 @@
         &__title {
           font-size: $font-md-bg;
           font-weight: $weight-xl;
+
+          @include respond(sm) {
+            font-size: $font-md;
+          }
         }
       }
 

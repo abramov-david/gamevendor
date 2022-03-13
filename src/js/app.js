@@ -26,4 +26,12 @@ $(document).ready(function () {
       );
     }
   });
+
+  /* ADD CARD */
+
+  $("#add_card").on("click", function () {
+    $(
+      '<div class="card card--main" style="border: 2px solid #d6bbfb; color:#d6bbfb;min-heihgt:450px;display:flex; align-items:center; justify-content:center">EMPTY CARD</div>'
+    ).insertBefore($(".card--main").first());
+  });
 });

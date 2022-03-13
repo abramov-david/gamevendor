@@ -19,6 +19,13 @@
     padding: 14px 20px;
     height: 4rem;
     border-radius: $br-md;
+
+    @include respond(md) {
+      padding: 10px 15px;
+    }
+    @include respond(sm) {
+      padding: 7px 10px;
+    }
   }
   &__icon {
     position: absolute;
